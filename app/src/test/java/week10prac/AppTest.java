@@ -55,12 +55,12 @@ public class AppTest {
 
     @Test public void testLeapYearScenario3() {
         App classUnderTest = new App();
-        assertTrue("29th Feb in a non-leap year should not be valid", classUnderTest.isValidGregorianDate(29,2,2100));
+        assertFalse("29th Feb in a non-leap year should not be valid", classUnderTest.isValidGregorianDate(29,2,2100));
     }  
 
     @Test public void testLeapYearScenario4() {
         App classUnderTest = new App();
-        assertTrue("29th Feb in a non-leap year should not be valid", classUnderTest.isValidGregorianDate(29,2,1900));
+        assertFalse("29th Feb in a non-leap year should not be valid", classUnderTest.isValidGregorianDate(29,2,1900));
     }  
 
     @Test public void testDaysScenario1a() {
